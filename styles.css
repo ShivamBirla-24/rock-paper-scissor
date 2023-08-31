@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+}
+
+body{
+    background-color: #8CC461;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    position: relative;
+}
+/* Score Area */
+#scoreSection{
+    width: 60%;
+    margin: 2rem auto;
+    border: 3px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    padding: 0.8rem 0;
+}
+
+#first{
+    width: 50%;
+    letter-spacing: 0.5rem;
+    color: white;
+    line-height: 2.6rem;
+}
+
+#second{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.scoreArea{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+#second .scoreArea{
+    background-color: white;
+    width: 40%;
+    border-radius: 8px;
+}
+.scoreArea p{
+    text-align: center;
+    color: #656565;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 12px;
+}
+.scoreArea h1{
+    color: #252525;
+    font-size: 4rem;
+    text-align: center;
+}
+
+/*Play Area*/
+
+#playArea{
+    width: 60%;
+    height: 50%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(images/rotatedTriangle.png) no-repeat;
+    background-position: center;
+    background-size: 25% 60%;
+}
+
+
+#playArea .choose_btn{
+    background: white;
+    outline: none;
+    border: none;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 12px solid;
+}
+
+#first_row{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#second_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    padding: 0 2rem 0 0;
+}
+
+footer button{
+    background-color: #8CC461;
+    color: white;
+    outline: none;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 700;
+    height: 50px;
+    width: 90px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#next-btn{
+    display: none;
+}
+
+
+/*Rule Section*/
+.ruleSection{
+    position: absolute;
+    color: white;
+    border: 3px solid white;
+    border-radius: 8px;
+    background-color: #004429;
+    padding: 1rem;
+    width: 17%;
+    right: 2%;
+    bottom: 10%;
+    display: none;
+}
+.ruleSection h2{
+    letter-spacing: 2px;
+}
+
+.head_ruleSection h2{
+    text-align: center;
+}
+
+#closebutton{
+    width: 42px;
+    height: 42px;
+    background-color: red;
+    border-radius: 50%;
+    border: 3.5px solid white;
+    position: absolute;
+    top: -6%;
+    left: 88%;
+    cursor: pointer;
+}
+
+li{
+    margin: 10px;
+    color: yellow;
+    font-size: 22px;
+}
+
+.ruleSection ul li p{
+    color: white;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1000px)  {
+    .ruleSection{
+        position: absolute;
+        color: white;
+        border: 3px solid white;
+        border-radius: 8px;
+        background-color: #004429;
+        padding: 1rem;
+        width: 19%;
+        right: 2%;
+        bottom: 12%;
+        display: none;
+    }
+    .ruleSection h2{
+        letter-spacing: 2px;
+    }
+    
+    .head_ruleSection h2{
+        text-align: center;
+    }
+    
+    #closebutton{
+        width: 42px;
+        height: 42px;
+        background-color: red;
+        border-radius: 50%;
+        border: 3.5px solid white;
+        position: absolute;
+        top: -6%;
+        left: 88%;
+        cursor: pointer;
+    }
+    
+    li{
+        margin: 10px;
+        color: yellow;
+        font-size: 22px;
+    }
+    
+    .ruleSection ul li p{
+        color: white;
+        font-size: 12px;
+    }
+    
+}
+
+/*result area*/
+#resultArea{
+    height: 50%;
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+}
+
+#pc,#us{
+    width: 12rem;
+    height: 12rem;
+    border: 20px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #FFFEFF;
+}
+
+#announcement{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 20px;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.side>p{
+    letter-spacing: 3px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    gap: 20px;
+}
+
+#announcement h1{
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+}
+
+#announcement h3{
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+#playagain-btn{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #6B6B6B;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+

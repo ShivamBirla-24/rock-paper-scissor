@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&family=Open+Sans:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="scoreSection">
+            <div id="first">
+                <h1>STONE</h1>
+                <h1>PAPER</h1>
+                <h1>SCISSORS</h1>
+            </div>
+            <div id="second">
+                <div id="compScore" class="scoreArea">
+                    <p>COMPUTER</p><p>SCORE</p>
+                    <h1>0</h1>
+                </div>
+                <div id="userScore" class="scoreArea">
+                    <p>YOUR</p><p>SCORE</p>
+                    <h1>0</h1>
+                </div>
+            </div>
+            
+        </div>
+        <div id="playArea">
+            <div id="first_row">
+                <div>
+                    <button class="choose_btn" style="border-color:#0074B6;" id="stone">
+                        <img src="images/stone.png" alt="Stone">
+                     </button>
+                </div>
+                <div>
+                    <button class="choose_btn" style="border-color: #BD00FF;" id="scissor">
+                        <img src="images/scissor.png" alt="Scissor">
+                    </button>
+                </div>
+            </div>
+            <div id="second_row">
+                <div>
+                    <button class="choose_btn" style="border-color: #FFA943;" id="paper">
+                        <img src="images/paper.png" alt="Paper">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="resultArea">
+            <div class="side" style="position: relative ;">
+                <p style="position: absolute; z-index: 1; bottom: 90%;">YOU PICKED</p>
+                 <div id="us">
+                    <img src="images/scissor.png" alt="scissor">
+                 </div>
+            </div>
+            <div id="announcement">
+                <div style="height: 5%;"></div>
+                <div>
+                    <div><h1 id="firstline">YOU WIN</h1></div>
+                    <div><h3 id="secondline">AGAINST PC</h3></div>
+                </div>
+                <div ><button id="playagain-btn">PLAY AGAIN</button></div>
+            </div>
+            <div class="side" style="position: relative;">
+                 <p style="position: absolute; z-index: 1; bottom: 90%;">PC PICKED</p>
+                 <div id="pc">
+                    <img src="images/paper.png" alt="paper">
+                 </div>
+            </div>
+        </div>
+        <div class="ruleSection">
+            <div class="head_ruleSection">
+                <h2 style="font-weight: 500;">Game Rules</h2>
+                <button id="closebutton">
+                    <div>
+                        <img src="images/X.png" alt="Close Button" height="24px">
+                    </div>
+                </button>
+            </div>
+            <div>
+                <ul type="square">
+                    <li><p>Rock beats scissors, scissors beat paper, and paper beats rock.</p></li>
+                    <li><p>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors."</p></li>
+                    <li><p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p></li>
+                    <li><p>If both players lay down the same hand, each player lays down another hand</p></li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <button id="rules-btn">RULES</button>
+            <a href="index2.html" target="_self" id="next-btn"><button>NEXT</button></a>
+        </footer>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
